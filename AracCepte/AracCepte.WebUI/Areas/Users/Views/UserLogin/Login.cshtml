@@ -2,6 +2,7 @@
 @{    
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
+@model AracCepte.WebUI.Areas.Users.Models.LoginFromModel
 <title>Giriş Yap</title>
 <!-- contact section start -->
 <div class="contact_section layout_padding">
@@ -17,17 +18,19 @@
         <div class="contact_section_2">
             <div class="row">
                 <div class="col-md-12">
-                    <form method="post">
+                    <form asp-action="Login" method="post" id="loginForm">
+                        @Html.AntiForgeryToken()
                         <!-- Email ve Password model ile bağlanıyor -->
                         <div class="mail_section_1">
-                            <input type="text" class="mail_text" placeholder="Email" name="Email" value="@Model.Email" required>
-                            <input type="password" class="mail_text" id="password" placeholder="Şifre" name="Password" required>
+                            <input type="text" class="mail_text" placeholder="Email" name="email" value="@Model.Email" required>
+                            <input type="password" class="mail_text" id="password" placeholder="Şifre" name="password" required>
+                           
                         </div>
 
                         <div class="send_bt">
                             <button type="submit" class="send_button">Giriş Yap</button>
                         </div>
-                    </form>
+                    </formas>
                 </div>
             </div>
         </div>
@@ -56,3 +59,4 @@
     <!-- sidebar -->
     <script src="~/elif/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="~/elif/js/custom.js"></script>
+    <script src="~/js/login.cs"></script>

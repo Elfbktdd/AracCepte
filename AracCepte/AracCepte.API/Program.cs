@@ -5,6 +5,11 @@ using AracCepte.DataAccess.Repostories;
 using AracCepte.Business.Abstract;
 using AracCepte.Business.Concrete;
 using System.Reflection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using AracCepte.DataAccess.Repositories;
+using AracCepte.Business.AuthService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,11 +17,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>) );
 builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>) );
+builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddDbContext<AracCepteContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
 });
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,6 +37,31 @@ builder.Services.AddCors(options =>
 });
 
 
+var jwtSettings = builder.Configuration.GetSection("Jwt");
+var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidateAudience = true,
+        ValidAudience = jwtSettings["Audience"],
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero
+    };
+});
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,8 +75,6 @@ app.UseCors("AllowAll");
 app.UseRouting();
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
 
 app.UseAuthorization();
 

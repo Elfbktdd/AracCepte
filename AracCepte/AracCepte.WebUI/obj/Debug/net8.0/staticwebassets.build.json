@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ibC5bVejd4nVGe17tQ3YRPY7w8iIHRvahRabvN3NtVc=",
+  "Hash": "V3lxPNXdbH1ngjNjQKioqDGqgIw8iamtTw9RGYtii5c=",
   "Source": "AracCepte.WebUI",
   "BasePath": "_content/AracCepte.WebUI",
   "Mode": "Default",
@@ -1414,6 +1414,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\login.js",
+      "SourceId": "AracCepte.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\",
+      "BasePath": "_content/AracCepte.WebUI",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\site.js",

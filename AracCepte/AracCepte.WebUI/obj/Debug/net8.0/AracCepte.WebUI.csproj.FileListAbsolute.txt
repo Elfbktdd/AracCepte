@@ -862,3 +862,4 @@ C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.WebUI\obj\
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.WebUI\obj\Debug\net8.0\AracCepte.WebUI.pdb
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.WebUI\obj\Debug\net8.0\AracCepte.WebUI.genruntimeconfig.cache
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.WebUI\obj\Debug\net8.0\ref\AracCepte.WebUI.dll
+C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.WebUI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

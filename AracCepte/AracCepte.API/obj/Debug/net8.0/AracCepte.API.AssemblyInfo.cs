@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AracCepte.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+944a055c073b4ae39690f5ca152cc530d57cef93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a42bab66fa5d60bdaa0bb0417f149ac0cea6954b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AracCepte.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AracCepte.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
