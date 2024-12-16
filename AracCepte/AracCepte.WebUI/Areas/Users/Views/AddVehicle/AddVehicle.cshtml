@@ -132,3 +132,127 @@
     });
 
 </script>
+@* Eski kod *@
+@* 
+@{
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<title>Araç Ekle</title>
+
+<!-- Form Section -->
+<div class="contact_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="contact_taital">Araç Ekle</h1>
+            </div>
+
+            <form id="vehicleForm" method="post" enctype="multipart/form-data">
+                <div class="contact_section_2">
+                    <div class="col-md-12">
+                        <div class="mail_section_1">
+                            <input type="text" class="mail_text" placeholder="Araç Adı" name="car_name" required>
+                            <input type="text" class="mail_text" placeholder="Model" name="car_model" required>
+                            <input type="date" class="mail_text" name="car_year" required>
+                            <!-- Belge Yükleme -->
+                            <label for="file-upload-1" class="mail_text" id="file-upload-label-1">Sürücü Belgesi (PDF)</label>
+                            <input id="file-upload-1" type="file" name="driver_license" accept=".pdf" style="display: none;" onchange="updateFileName('1')">
+
+                            <label for="file-upload-2" class="mail_text" id="file-upload-label-2">Ruhsat Belgesi (PDF)</label>
+                            <input id="file-upload-2" type="file" name="registration_license" accept=".pdf" style="display: none;" onchange="updateFileName('2')">
+
+                            <label for="file-upload-3" class="mail_text" id="file-upload-label-3">Kimlik Belgesi (PDF)</label>
+                            <input id="file-upload-3" type="file" name="identity_card" accept=".pdf" style="display: none;" onchange="updateFileName('3')">
+
+                            <!-- Araç Fotoğrafları -->
+                            <label for="car-images" class="mail_text" id="car-images-label">Araç Fotoğrafları Seç (JPG, PNG, JPEG)</label>
+                            <input type="file" id="car-images" name="car_images[]" accept=".jpg, .jpeg, .png" style="display: none;" multiple onchange="updateFileNames()">
+                            <span id="car-images-file-names"></span>
+
+                            <input type="number" class="mail_text" placeholder="Fiyat ₺" name="price" min="0" step="1000.0" required>
+                        </div>
+
+                        <div class="send_bt">
+                            <button type="submit" class="send_button">Kaydet</button>
+                            <button type="reset" class="send_button">Temizle</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    function updateFileName(inputId) {
+        const fileInput = document.getElementById('file-upload-' + inputId);
+        const fileLabel = document.getElementById('file-upload-label-' + inputId);
+        if (!fileInput || !fileLabel) {
+            console.error(`Element not found for inputId: ${inputId}`);
+            return;
+        }
+        const fileName = fileInput.files[0] ? fileInput.files[0].name : getDefaultLabel(inputId);
+        fileLabel.textContent = fileName;
+    }
+
+    function getDefaultLabel(inputId) {
+        switch (inputId) {
+            case '1': return 'Sürücü Belgesi (PDF)';
+            case '2': return 'Ruhsat Belgesi (PDF)';
+            case '3': return 'Kimlik Belgesi (PDF)';
+            default: return 'Belge Seçiniz';
+        }
+    }
+
+    function updateFileNames() {
+        const input = document.getElementById('car-images');
+        const label = document.getElementById('car-images-label');
+        if (!input || !label) {
+            console.error('Car images input or label not found.');
+            return;
+        }
+        const fileNames = Array.from(input.files).map(file => file.name).join(', ');
+        label.textContent = fileNames || label.getAttribute('data-placeholder');
+    }
+
+    window.onload = function () {
+        const labels = document.querySelectorAll('label[for^="file-upload"]');
+        if (!labels.length) {
+            console.warn('No labels found with "for^=file-upload".');
+            return;
+        }
+        labels.forEach(label => {
+            label.setAttribute('data-placeholder', label.textContent);
+        });
+    };
+</script>
+<script>
+    document.querySelector("#vehicleForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = {
+            carName: document.querySelector("input[name='car_name']").value,
+            carModel: document.querySelector("input[name='car_model']").value,
+            carYear: document.querySelector("input[name='car_year']").value,
+            price: document.querySelector("input[name='price']").value
+        };
+
+        fetch("https://localhost:5000/api/vehicles", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(data => alert(data))
+            .catch(error => console.error("Error:", error));
+    });
+</script> *@
+
+
+
+ 

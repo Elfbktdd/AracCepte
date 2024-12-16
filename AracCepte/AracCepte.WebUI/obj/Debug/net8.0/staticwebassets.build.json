@@ -1,7 +1,11 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "3pZ0I9ZBL26xfIkwnMn7IKbWcYOQsduYpLt/OS6g2HU=",
+=======
+  "Hash": "V3lxPNXdbH1ngjNjQKioqDGqgIw8iamtTw9RGYtii5c=",
+>>>>>>> 5bf29c4be4a46d2ede2988fd635f811a4adeb4ac
 =======
   "Hash": "V3lxPNXdbH1ngjNjQKioqDGqgIw8iamtTw9RGYtii5c=",
 >>>>>>> 5bf29c4be4a46d2ede2988fd635f811a4adeb4ac
@@ -1421,9 +1425,32 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\zehra\\OneDrive\\Belgeler\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\site.js",
 =======
       "Identity": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\login.js",
+=======
+      "Identity": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\login.js",
+      "SourceId": "AracCepte.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\",
+      "BasePath": "_content/AracCepte.WebUI",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\js\\site.js",
+>>>>>>> 5bf29c4be4a46d2ede2988fd635f811a4adeb4ac
       "SourceId": "AracCepte.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.WebUI\\wwwroot\\",
