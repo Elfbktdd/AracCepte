@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using AracCepte.Entity.Entities;
 using Microsoft.EntityFrameworkCore;
 using AracCepte.DataAccess.Context;
+using AracCepte.DTO.DTOs.LoginDto;
+using Microsoft.IdentityModel.Tokens.Configuration;
 
 namespace AracCepte.WebUI.Areas.Users.Controllers
 {

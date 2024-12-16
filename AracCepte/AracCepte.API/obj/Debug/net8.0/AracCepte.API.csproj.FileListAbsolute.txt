@@ -363,7 +363,6 @@ C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\De
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\AracCepte.API.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\AracCepte.API.pdb
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
@@ -535,3 +534,4 @@ C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\obj\De
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\obj\Debug\net8.0\AracCepte.API.pdb
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\obj\Debug\net8.0\AracCepte.API.genruntimeconfig.cache
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.API\obj\Debug\net8.0\ref\AracCepte.API.dll
+C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

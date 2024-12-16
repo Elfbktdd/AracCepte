@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AracCepte.DTO.DTOs.VehicleDtos
 {
     public class CreateVehicleDto
-    {
+    {   public  int Id { get; set; }  
         public string Brand { get; set; } //Veichle's Brand
         public string Model { get; set; } //Veihle's Model
         public int Year { get; set; } // Veihle's Year

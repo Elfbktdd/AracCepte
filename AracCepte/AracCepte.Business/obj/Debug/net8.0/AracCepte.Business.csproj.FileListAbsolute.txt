@@ -33,6 +33,8 @@ C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Deb
 C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.Entity.pdb
 C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\obj\Debug\net8.0\AracCept.154B5551.Up2Date
 C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\obj\Debug\net8.0\ref\AracCepte.Business.dll
+C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.DTO.dll
+C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.DTO.pdb
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.Business.deps.json
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.Business.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.Business.pdb
@@ -53,5 +55,3 @@ C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\o
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\obj\Debug\net8.0\refint\AracCepte.Business.dll
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\obj\Debug\net8.0\AracCepte.Business.pdb
 C:\Users\zehra\OneDrive\Belgeler\GitHub\AracCepte\AracCepte\AracCepte.Business\obj\Debug\net8.0\ref\AracCepte.Business.dll
-C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.DTO.dll
-C:\Users\MONSTER\Documents\GitHub\AracCepte\AracCepte\AracCepte.Business\bin\Debug\net8.0\AracCepte.DTO.pdb

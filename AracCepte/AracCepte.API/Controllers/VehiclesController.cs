@@ -5,12 +5,21 @@ using AracCepte.Business.Abstract;
 using AracCepte.DTO.DTOs.VehicleDtos;
 using AracCepte.Entity.Entities;
 
+
 namespace AracCepte.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VehiclesController(IGenericService<Vehicle> _vehicleService, IMapper _mapper) : ControllerBase
+    public class VehiclesController : ControllerBase
     {
+        private readonly IGenericService<Vehicle> _vehicleService;
+        private readonly IMapper _mapper;
+
+        public VehiclesController(IGenericService<Vehicle> vehicleService, IMapper mapper)
+        {
+            _vehicleService = vehicleService;
+            _mapper = mapper;
+        }
         //Vecihle get all of them
         [HttpGet]
         public IActionResult Get()
@@ -39,9 +48,14 @@ namespace AracCepte.API.Controllers
         [HttpPost]
         public IActionResult Create(CreateVehicleDto createVehicleDto)
         {
+            if (createVehicleDto == null)
+            {
+                return BadRequest("Araç bilgileri boş olamaz.");
+            }
+
             var newValue = _mapper.Map<Vehicle>(createVehicleDto);
             _vehicleService.TCreate(newValue);
-            return Ok("Yeni arac Oluşturuldu");
+            return Ok("Yeni araç oluşturuldu");
         }
 
         //Vecihle Update
@@ -52,5 +66,6 @@ namespace AracCepte.API.Controllers
             _vehicleService.TUpdate(value);
             return Ok("arac Güncellendi");
         }
+       
     }
 }

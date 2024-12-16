@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AracCepte.API\AracCepte.API.csproj" />
+    <ProjectReference Include="..\AracCepte.Business\AracCepte.Business.csproj" />
+    <ProjectReference Include="..\AracCepte.DataAccess\AracCepte.DataAccess.csproj" />
+    <ProjectReference Include="..\AracCepte.DTO\AracCepte.DTO.csproj" />
+    <ProjectReference Include="..\AracCepte.Entity\AracCepte.Entity.csproj" />
+    <ProjectReference Include="..\AracCepte.WebUI\AracCepte.WebUI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

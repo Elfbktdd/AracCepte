@@ -11,13 +11,15 @@
             <div class="col-sm-12">
                 <h1 class="contact_taital">Araç Ekle</h1>
             </div>
-            <form action="/api/vehicles" method="post" enctype="multipart/form-data">
+
+            <form id="vehicleForm" method="post">
                 <div class="contact_section_2">
                     <div class="col-md-12">
                         <div class="mail_section_1">
                             <input type="text" class="mail_text" placeholder="Araç Adı" name="car_name" required>
                             <input type="text" class="mail_text" placeholder="Model" name="car_model" required>
                             <input type="date" class="mail_text" name="car_year" required>
+
                             <!-- Belge Yükleme -->
                             <label for="file-upload-1" class="mail_text" id="file-upload-label-1">Sürücü Belgesi (PDF)</label>
                             <input id="file-upload-1" type="file" name="driver_license" accept=".pdf" style="display: none;" onchange="updateFileName('1')">
@@ -42,7 +44,91 @@
                         </div>
                     </div>
                 </div>
+
+            </form>
         </div>
-        </form>
     </div>
 </div>
+
+<script>
+    function updateFileName(inputId) {
+        const fileInput = document.getElementById('file-upload-' + inputId);
+        const fileLabel = document.getElementById('file-upload-label-' + inputId);
+        if (!fileInput || !fileLabel) {
+            console.error(`Element not found for inputId: ${inputId}`);
+            return;
+        }
+        const fileName = fileInput.files[0] ? fileInput.files[0].name : getDefaultLabel(inputId);
+        fileLabel.textContent = fileName;
+    }
+
+    function getDefaultLabel(inputId) {
+        switch (inputId) {
+            case '1': return 'Sürücü Belgesi (PDF)';
+            case '2': return 'Ruhsat Belgesi (PDF)';
+            case '3': return 'Kimlik Belgesi (PDF)';
+            default: return 'Belge Seçiniz';
+        }
+    }
+
+    function updateFileNames() {
+        const input = document.getElementById('car-images');
+        const label = document.getElementById('car-images-label');
+        if (!input || !label) {
+            console.error('Car images input or label not found.');
+            return;
+        }
+        const fileNames = Array.from(input.files).map(file => file.name).join(', ');
+        label.textContent = fileNames || label.getAttribute('data-placeholder');
+    }
+</script>
+
+<script>
+    document.querySelector("#vehicleForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append("carName", document.querySelector("input[name='car_name']").value);
+        formData.append("carModel", document.querySelector("input[name='car_model']").value);
+        formData.append("carYear", document.querySelector("input[name='car_year']").value);
+        formData.append("price", document.querySelector("input[name='price']").value);
+
+        // Dosyalar
+        const driverLicense = document.querySelector("input[name='driver_license']");
+        if (driverLicense.files.length > 0) {
+            formData.append("driver_license", driverLicense.files[0]);
+        }
+        const registrationLicense = document.querySelector("input[name='registration_license']");
+        if (registrationLicense.files.length > 0) {
+            formData.append("registration_license", registrationLicense.files[0]);
+        }
+        const identityCard = document.querySelector("input[name='identity_card']");
+        if (identityCard.files.length > 0) {
+            formData.append("identity_card", identityCard.files[0]);
+        }
+
+        const carImages = document.querySelector("input[name='car_images[]']");
+        if (carImages.files.length > 0) {
+            for (let i = 0; i < carImages.files.length; i++) {
+                formData.append("car_images[]", carImages.files[i]);
+            }
+        }
+
+        console.log('Veri gönderiliyor...', formData);  // Debugging: Form verilerini kontrol edin.
+
+        fetch("https://localhost:5000/api/vehicles", {
+            method: "POST",
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Veri başarıyla gönderildi:', data);  // Debugging: Cevabı kontrol edin.
+                alert(data.message || 'Araç başarıyla eklendi');
+            })
+            .catch(error => {
+                console.error("Hata:", error);
+                alert('Bir hata oluştu');
+            });
+    });
+
+</script>

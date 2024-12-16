@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.API", "AracCepte.API\AracCepte.API.csproj", "{32A64F9F-8CDB-4CF9-9639-37ABB0784AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.API", "AracCepte.API\AracCepte.API.csproj", "{32A64F9F-8CDB-4CF9-9639-37ABB0784AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.Entity", "AracCepte.Entity\AracCepte.Entity.csproj", "{43219CE4-F929-4BAE-8239-97F62B3EE6D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.Entity", "AracCepte.Entity\AracCepte.Entity.csproj", "{43219CE4-F929-4BAE-8239-97F62B3EE6D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.DataAccess", "AracCepte.DataAccess\AracCepte.DataAccess.csproj", "{63F3CF36-8449-48B6-89E9-2E2001028F8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.DataAccess", "AracCepte.DataAccess\AracCepte.DataAccess.csproj", "{63F3CF36-8449-48B6-89E9-2E2001028F8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.Business", "AracCepte.Business\AracCepte.Business.csproj", "{5B57C512-B805-4CE9-B5D3-442DCD7685D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.Business", "AracCepte.Business\AracCepte.Business.csproj", "{5B57C512-B805-4CE9-B5D3-442DCD7685D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.DTO", "AracCepte.DTO\AracCepte.DTO.csproj", "{A7A78813-9A43-4765-A932-D04F9B0402C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.DTO", "AracCepte.DTO\AracCepte.DTO.csproj", "{A7A78813-9A43-4765-A932-D04F9B0402C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracCepte.WebUI", "AracCepte.WebUI\AracCepte.WebUI.csproj", "{CA0933F6-5B5E-4BC8-B12B-49370D36427F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AracCepte.WebUI", "AracCepte.WebUI\AracCepte.WebUI.csproj", "{CA0933F6-5B5E-4BC8-B12B-49370D36427F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper_test", "AutoMapper_test\AutoMapper_test.csproj", "{D3FEEC9E-F868-4A87-A140-65B662464D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CA0933F6-5B5E-4BC8-B12B-49370D36427F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA0933F6-5B5E-4BC8-B12B-49370D36427F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA0933F6-5B5E-4BC8-B12B-49370D36427F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FEEC9E-F868-4A87-A140-65B662464D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FEEC9E-F868-4A87-A140-65B662464D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FEEC9E-F868-4A87-A140-65B662464D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FEEC9E-F868-4A87-A140-65B662464D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
