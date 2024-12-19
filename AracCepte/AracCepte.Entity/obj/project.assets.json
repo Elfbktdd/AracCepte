@@ -4795,24 +4795,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zehra\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
+    "C:\\Users\\MONSTER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zehra\\OneDrive\\Belgeler\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\AracCepte.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\AracCepte.Entity.csproj",
       "projectName": "AracCepte.Entity",
-      "projectPath": "C:\\Users\\zehra\\OneDrive\\Belgeler\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\AracCepte.Entity.csproj",
-      "packagesPath": "C:\\Users\\zehra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zehra\\OneDrive\\Belgeler\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\obj\\",
+      "projectPath": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\AracCepte.Entity.csproj",
+      "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MONSTER\\Documents\\GitHub\\AracCepte\\AracCepte\\AracCepte.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\zehra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4820,7 +4820,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -4886,7 +4885,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
